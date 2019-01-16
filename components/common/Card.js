@@ -4,11 +4,11 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 
-type Props = {
+type CardProps = {
   children: React.ReactChildren;
 }
 
-const Card = (props: Props) => {
+const Card = (props: CardProps) => {
 
     const { children } = props;
     const { cardStyle } = styles;
@@ -34,5 +34,5 @@ const styles = StyleSheet.create({
 });
 
 
-export default Card;
+export default { Card };
 

@@ -2,9 +2,21 @@
   "name": "onboardme",
   "version": "0.0.1",
   "private": true,
+  "npm": ">6.5.0",
+  "node": ">11.1.0",
+  "author": "",
+  "keywords": [],
+  "contributors": [],
+
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch --no-cache --runInBand",
+    "flow": "flow check",
+    "flow:stop": "flow stop",
+    "develop": "yarn run rns && rnios",
+    "rns": "react-native start",
+    "rnios": "react-native run-ios"
   },
   "dependencies": {
     "react": "16.6.3",
@@ -12,11 +24,31 @@
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
+    "flow-bin": "^0.90.0",
+    "flow-typed": "^2.5.1",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.51.1",
+    "react-native-testing-library": "^1.5.0",
     "react-test-renderer": "16.6.3"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleNameMapper": {
+      "metro-react-native-babel-preset": "<rootDir>/node_modules/metro-react-native-babel-preset"
+    },
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 75,
+        "statements": 70
+      },
+      "./components/**/*.js": {
+        "branches": 75,
+        "functions": 75,
+        "lines": 75,
+        "statements": 75
+      }
+    }
   }
 }

@@ -3,8 +3,7 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Card from './components/Card';
-import Input from './components/Input';
+import { Card, Input, /* CustomButton */ } from './common/index';
 
 type Props = {};
 
@@ -15,6 +14,7 @@ export default class App extends Component<Props> {
         <Card>
           <Input placeholder="username" />
           <Input placeholder="password" />
+          {/* <CustomButton /> */}
         </Card>
       </View>
     );
