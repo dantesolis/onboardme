@@ -3,7 +3,11 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Card, Input, /* CustomButton */ } from './common/index';
+import {
+  Card,
+  CustomButton,
+  Input
+ } from './common/index';
 
 type Props = {};
 
@@ -14,7 +18,10 @@ export default class App extends Component<Props> {
         <Card>
           <Input placeholder="username" />
           <Input placeholder="password" />
-          {/* <CustomButton /> */}
+          <CustomButton
+            isaccesible="I'm ok for the color blind and shit"
+            buttonText="Press me"
+          />
         </Card>
       </View>
     );

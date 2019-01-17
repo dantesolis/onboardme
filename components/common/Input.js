@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 import { TextInput, StyleSheet, View } from 'react-native';
 
 type Props = {
-  username: string;
-  password: string;
+  username?: string;
+  password?: string;
   placeholder: string;
 }
 
@@ -20,14 +20,14 @@ class Input extends Component<Props, State> {
 
   render() {
     const { textInputStyle } = styles;
-    const { placeholder } = this.props;
+    const { password, placeholder, username } = this.props;
 
     return (
       <View>
         <TextInput
           style={textInputStyle}
           onChangeText={text => this.setState({ text })}
-          onFocus={() => 'helpers'}
+          onFocus={() => { return `I'm focusing` }}
           value={this.state.text}
           placeholder={placeholder}
         />
