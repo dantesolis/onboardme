@@ -6,15 +6,19 @@ import { StyleSheet, View } from 'react-native';
 import {
   Card,
   CustomButton,
-  Input
- } from './common/index';
+  Input,
+  CustomText
+} from './common/index';
 
 type Props = {};
 
 export default class App extends Component<Props> {
+
   render() {
+
+    const { container } = styles;
     return (
-      <View style={styles.container}>
+      <View style={container}>
         <Card>
           <Input placeholder="username" />
           <Input placeholder="password" />
@@ -22,6 +26,10 @@ export default class App extends Component<Props> {
             isaccesible="I'm ok for the color blind and shit"
             buttonText="Press me"
           />
+        </Card>
+
+        <Card>
+          <CustomText title="I'm a text" />
         </Card>
       </View>
     );

@@ -69,4 +69,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default { CustomButton };
+export { CustomButton };
