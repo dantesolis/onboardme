@@ -2,7 +2,6 @@
 
 This is for a code challenge for [charlin.be](https://www.charlin.be/).
 
-See the syle Guide [here](https://github.com/dantesolis/onboardme/issues/1).
 
 See the live prototype [here](#).
 

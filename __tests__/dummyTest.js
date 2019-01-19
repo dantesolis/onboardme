@@ -1,6 +1,4 @@
-// [TODO]: Need to add flow
-
-// @flow
+// [TODO]: Needs fixing with the text Library
 import { assert } from 'enzyme';
 const add = (a, b) => {
   if (typeof a === 'number' && typeof b === 'number') {

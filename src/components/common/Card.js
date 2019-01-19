@@ -1,7 +1,6 @@
-// @format
 // @flow
 
-import React, { Component } from 'react';
+import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
 type CardProps = {
@@ -23,13 +22,18 @@ const Card = (props: CardProps) => {
 
 const styles = StyleSheet.create({
   cardStyle: {
-    alignContent: 'center',
-    width: 250,
-    height: 250,
-    margin: 'auto',
-    borderColor: 'red',
-    borderRadius: 10,
-    borderWidth: 3
+    borderWidth: 1,
+    borderRadius: 2,
+    borderColor: '#DDD',
+    borderBottomWidth: 0,
+    marginTop: 10,
+    marginRight: 5,
+    marginLeft: 5,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 1
   },
 });
 
