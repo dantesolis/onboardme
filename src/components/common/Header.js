@@ -7,7 +7,7 @@ type Props = {
 const Header = (props: Props) => { 
 
   const { textStyle, viewStyle } = styles;
-  const { headerText } = props; // ES6 syntax destructuring 💯 Frigging loving JS.
+  const { headerText } = props;
 
   return (
     <View style={viewStyle}>

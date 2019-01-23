@@ -1,19 +1,14 @@
-// @flow
-import * as React from 'react';
-import { Text as NativeText, StyleSheet } from 'react-native';
+// // [TODO]: Fix
+// // @flow
+// import * as React from 'react';
+// import { Text as NativeText } from 'react-native';
 
-type Props = {
-  title: string
-}
+// type Props = {
+//   text?: string
+// }
 
-const styles = {
-  textStyle: {
-    fontSize: 14
-  }
-}
+// const Text = ({text}) => (
+//   <NativeText>{text}</NativeText>
+// )
 
-const CustomText = (props: Props) => (
-  <NativeText style={{ fontSize: 14 }}>{text}</NativeText>
-)
-
-export { Text };
+// export { Text };
